@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* Opcional: fija la imagen al hacer scroll */
+    background-position: center;
+    /* Centra la imagen */
+}
+
+
+
+.game-container {
+    width: 90%;
+    max-width: 400px;
+    /* Ancho máximo para evitar que sea demasiado grande */
+}
+
+.palo {
+
+    width: 10%;
+    height: 100%;
+    background-image: url(../img/palo.png);
+    position: absolute;
+    left: 0px;
+}
+
+.palo2 {
+
+    width: 10%;
+    height: 100%;
+    background-image: url(../img/palo.png);
+    position: absolute;
+    right: 0px;
+}
+
+/* Cabezera de la máquina */
+.machine-header {
+    width: 100%;
+    height: auto;
+    /* Altura automática para mantener la proporción */
+    display: flex;
+    justify-content: center;
+}
+
+.machine-header-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    /* Asegura que no se salga del contenedor */
+    object-fit: contain;
+    /* Muestra la imagen completa sin deformar */
+}
+
+/* Zona de juego (transparente, solo para el gancho y los peluches) */
+.game-area {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* Altura fija para la zona de juego */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fondo semitransparente (opcional) */
+    background-image: url('../img/maquina_zonajuego.png');
+    /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    /* Cubre todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+    overflow: hidden;
+    margin-top: -5px;
+}
+
+/* Gancho */
+.hook-container {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12%;
+    transition: all 0.3s;
+}
+
+.hook {
+    width: 100%;
+    height: auto;
+}
+
+/* Peluches */
+.prize {
+    position: absolute;
+    width: 30%;
+    max-width: 80px;
+    left: 116px;
+    display: none;
+}
+
+.prizee1 {
+    top: 50px;
+}
+.prizee2 {
+    top: 220px;
+}
+.prizee3 {
+    top: 420px;
+}
+ .visible{
+
+    display: inherit;
+ }
+
+.prize-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Base de la máquina */
+.machine-base {
+    width: 100%;
+    height: auto;
+    /* Altura automática para mantener la proporción */
+    display: flex;
+    justify-content: center;
+}
+
+.machine-base-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    /* Asegura que no se salga del contenedor */
+    object-fit: contain;
+    /* Muestra la imagen completa sin deformar */
+}
+
+.panell {
+    margin-left: -123px;
+    margin-top: 15px;
+}
+
+.pantalla {
+    margin-left: 18px;
+    width: 100px;
+
+
+    margin-bottom: 10px;
+}
+
+.botonera {
+
+    margin-left: 10px;
+}
+
+/* Controles */
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+/* Botones */
+.control-btn {
+
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin: -1px
+}
+
+#b0 {
+    background-color: #c5c4c2;
+}
+
+#b1 {
+    background-color: #2c9b94;
+}
+
+#b2 {
+    background-color: #d04b42;
+}
+
+#b3 {
+    background-color: #d7c922;
+}
+
+#b4 {
+    background-color: #2b5b35;
+}
+
+#b5 {
+    background-color: #b29887;
+}
+
+#b6 {
+    background-color: #76b566;
+}
+
+#bAccept {
+    background-color: #2b5b35;
+    width: 100px;
+}
+
+#bBorrar {
+    background-color: #d04b42;
+    width: 100px;
+}
+
+#led {
+
+
+    font-size: 40px;
+    height: 50px;
+}
+
+
+
+.control-btn2 {
+    padding: 15px;
+    font-size: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.control-btn:active {
+    background-color: #ff5252;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.won-prize {
+    max-width: 80vw;
+    max-height: 50vh;
+}
+
+
+
+.marquee-container {
+    width: 90px;
+    /* el ancho de tu “pantalla” */
+    overflow: hidden;
+    /* oculta lo que se sale */
+    margin-top: -60px;
+    height: 50px;
+    margin-left: 5px;
+
+    /* evita saltos de línea */
+}
+
+.marquee-text {
+    display: inline-block;
+}
+
+.marqueanimation {
+
+    animation: deslizar 5s linear infinite;
+
+}
+
+@keyframes deslizar {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.zona {
+    position: absolute;
+    margin-top: 25px;
+    width: 244px;
+    height: 650px;
+    margin-left: -103px;
+}

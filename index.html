@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrapa el humà - Guadiana</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <!-- Cabezera de la máquina -->
+        <div class="machine-header">
+
+           
+                <img src="img/base.png" alt="Cabezera de la máquina" class="machine-header-img">
+            <div class="zona">
+                <div class="prize prizee1 hook-container" id="prize01">
+                    <img src="img/1.png" alt="Peluche 1" class="prize-img hook">
+                </div>
+
+                <div class="prize prizee1 hook-container" id="prize02">
+                    <img src="img/2.png" alt="Peluche 1" class="prize-img hook">
+                </div>
+                <div class="prize prizee2 hook-container" id="prize03">
+                    <img src="img/3.png" alt="Peluche 1" class="prize-img hook">
+                </div>
+                <div class="prize prizee2 hook-container" id="prize04">
+                    <img src="img/4.png" alt="Peluche 1" class="prize-img hook">
+                </div>
+                <div class="prize prizee3 hook-container" id="prize05">
+                    <img src="img/5.png" alt="Peluche 1" class="prize-img hook">
+                </div>
+            </div>
+
+            <div class="panell">
+                <div class="pantalla">
+                    <img src="img/pantalla.jpg" style="width: 100%;" />
+
+                    <div class="marquee-container">
+                        <span id="led" class="marquee-text"></span>
+                    </div>
+                </div>
+                <div class="botonera">
+                    <div class="controls">
+                        <button id="b0" class="control-btn">0</button>
+                        <button id="b1" class="control-btn">1</button>
+
+                    </div>
+                    <div class="controls">
+                        <button id="b2" class="control-btn">2</button>
+                        <button id="b3" class="control-btn">3</button>
+                        <button id="b4" class="control-btn">4</button>
+
+                    </div>
+                    <div class="controls">
+                        <button id="b5" class="control-btn">5</button>
+                        <button id="b6" class="control-btn">6</button>
+
+                    </div>
+                    <div class="controls">
+                        <button id="bAccept" class="control-btn">Acceptar</button>
+                    </div>
+                    <div class="controls">
+
+                        <button id="bBorrar" class="control-btn">Borrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de victoria -->
+        <div class="modal" id="winModal">
+            <div class="modal-content">
+                <h2>¡Enhorabona!</h2>
+                <h3> Has comprat <span id="nom"></span> </h3>
+                <h4 id="descripcio"></h4>
+                <img id="wonPrize" src="" alt="Premio ganado" class="won-prize">
+                <h4>Col·labora amb la <a href='https://www.instagram.com/comiguadiana/'>@comiguadiana</a></h4>
+                <button id="restartBtn" class="control-btn2">Torna a començar</button>
+            </div>
+        </div>
+
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>
