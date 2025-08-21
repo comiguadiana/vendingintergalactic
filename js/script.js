@@ -94,12 +94,12 @@ function mostrar(num) {
 function comprar() {
 
     var num = led.textContent;
-    const numValidos = ["01", "02", "03", "04", "05", "06"];
+    const numValidos = ["001", "002", "003", "004", "005", "006"];
 
     if (numValidos.includes(num)) {
         console.log("Compra correcta")
 
-        if (num == "06") {
+        if (num == "006") {
 
 
             led.classList.add("marqueanimation");
