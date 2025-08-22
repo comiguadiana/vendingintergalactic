@@ -61,11 +61,11 @@ function alerta(texto) {
 function mostrar(num) {
 
     const anom = ["Guatatas", "Guamen", "Núvol Guadanil", "GuadaBurger", "Guadaogurts"];
-    const adescripcio = ["Patates intergaláctiques especialitat de SGG",
+    const adescripcio = ["Patates intergalàctiques especialitat d'SGG",
         "El millor ramen de la galàxia Guadianil",
         "Magnífics núvols recollits dels millors indrets de la galàxia",
-        "Hamburguesas de carn intergalàctica sense maltractament animal",
-        "Iogurs naturals amb certificat ecologic intergalàctic"
+        "Hamburgueses de carn intergalàctica sense maltractament animal",
+        "Iogurs naturals amb certificat ecològic intergalàctic"
     ];
     const nom = document.getElementById('nom');
     const descripcio = document.getElementById('descripcio');
